@@ -22,7 +22,6 @@ class PriceFinder {
     public static void checkIndex(int index, double[] prices) throws PriceOutOfRangeException, NumberFormatException {
         if (index < 0 || index >= prices.length)
             throw new PriceOutOfRangeException("Error: The entered index is invalid. Please enter values from the range.");
-
     }
 
     public static int getIndex(Scanner scanner) {

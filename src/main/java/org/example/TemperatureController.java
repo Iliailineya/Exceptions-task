@@ -5,7 +5,7 @@ import org.example.customException.*;
 import java.util.Scanner;
 
 class TemperatureController {
-    public static void runTemperatureDemo(Scanner scanner) {
+    public static void tempController(Scanner scanner) {
         while (true) {
             try {
                 checkTemperatureRange(getCurrentTemperature(scanner));

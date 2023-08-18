@@ -3,7 +3,7 @@ package org.example;
 import java.util.Scanner;
 
 class NumberInputHandler {
-    public static void demoNumFormatException(Scanner scanner) {
+    public static void enterNumber(Scanner scanner) {
         while (true) {
             try {
                 System.out.println("Enter a number: ");
