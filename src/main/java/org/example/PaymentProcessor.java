@@ -8,11 +8,14 @@ class PaymentProcessor {
     static final double BALANCE = 1000.0;
 
     public static void runPaymentDemo(Scanner scanner) {
-        try {
-            validatePayment(getPurchaseAmount(scanner), BALANCE);
-            System.out.println("Payment successful!");
-        } catch (InsufficientFundsException e) {
-            System.out.println("Payment failed: " + e.getMessage());
+        while (true) {
+            try {
+                validatePayment(getPurchaseAmount(scanner), BALANCE);
+                System.out.println("Payment successful!");
+                break;
+            } catch (InsufficientFundsException e) {
+                System.out.println("Payment failed: " + e.getMessage());
+            }
         }
     }
 
