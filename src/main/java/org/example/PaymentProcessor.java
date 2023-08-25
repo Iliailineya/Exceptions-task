@@ -7,7 +7,7 @@ import java.util.Scanner;
 class PaymentProcessor {
     static final double BALANCE = 1000.0;
 
-    public static void runPaymentDemo(Scanner scanner) {
+    public static void paymentDemo(Scanner scanner) {
         while (true) {
             try {
                 validatePayment(getPurchaseAmount(scanner), BALANCE);

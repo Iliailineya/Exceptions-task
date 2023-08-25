@@ -16,17 +16,19 @@ public class Main {
         }
     }
 
-    public static void firstTask(Scanner scanner){
+    public static void firstTask(Scanner scanner) {
         NumberInputHandler.enterNumber(scanner);
     }
-    public static void secondTask(Scanner scanner){
+
+    public static void secondTask(Scanner scanner) {
         PriceFinder.findPrice(scanner);
     }
-    public static void thirdTask(Scanner scanner){
-        PaymentProcessor.runPaymentDemo(scanner);
 
+    public static void thirdTask(Scanner scanner) {
+        PaymentProcessor.paymentDemo(scanner);
     }
-    public static void fourTask(Scanner scanner){
+
+    public static void fourTask(Scanner scanner) {
         TemperatureController.tempController(scanner);
     }
 }
